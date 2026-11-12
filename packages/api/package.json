@@ -1,0 +1,36 @@
+{
+	"name": "@zwap/api",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"type": "module",
+	"scripts": {},
+	"devDependencies": {
+		"@zwap/config": "workspace:*"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@trpc/server": "catalog:",
+		"@trpc/client": "catalog:",
+		"@zwap/db": "workspace:*",
+		"@zwap/solana": "workspace:*",
+		"@zwap/zcash": "workspace:*",
+		"@solana/web3.js": "^1.95.8",
+		"drizzle-orm": "^0.44.7",
+		"@coral-xyz/anchor": "^0.32.1",
+		"bs58": "^6.0.0",
+		"dotenv": "catalog:",
+		"next": "catalog:",
+		"pg": "^8.14.1",
+		"tweetnacl": "^1.0.3",
+		"ws": "^8.18.0",
+		"zod": "catalog:"
+	}
+}
